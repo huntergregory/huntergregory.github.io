@@ -1,0 +1,211 @@
+/* FIX Need to change font-size & card and pic wrapper size based on screen width*/ 
+
+/*
+1500+: 28px
+850 - 1300: 25px
+650 - 850: 20px;
+550  - 650: 18px;
+430 - 550: turn off nav buttons (hamburger) and 15px
+min? - 430: 12px
+*/
+
+body {
+	background: #559ad2;
+	color: black;
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	/*background: #ffa6ff;*/
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: 600;
+	padding: 0.8em 0;
+	margin: 0;
+}
+
+div.upcoming > h1 {
+	padding: 0;
+}
+
+div.upcoming {
+	padding-left: 0.8em;
+	padding-bottom: 0.4em;
+}
+
+h2 {
+	padding-left: 3px;
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.title {
+	font-size: 1.25em;
+	color: #eeeeee;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0em;
+}
+
+li {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+li:before {
+	content: "+";
+	padding-right: 0.25em;
+}
+
+p {
+	font-size: 1em;
+	/*font-family: "Ubuntu Mono", Mono;*/
+}
+
+.content {
+	margin-top: 0;
+	z-index: 2;
+	background-color: #559ad2;
+}
+
+a:link {
+	color: #004172;
+	text-decoration: none;
+}
+  
+a:visited {
+	color: #004172;
+	text-decoration: none;
+}
+  
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+   
+a:active {
+	color: #004172;
+	text-decoration: none;
+} 
+
+.cool-blue {
+	background: #126ca1;
+}
+
+.darker-blue {
+	background: #004172;
+}
+
+.lighter-blue {
+	background: #559ad2;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+img.hover {
+	opacity: 1.0;
+}
+
+#name {
+	font-size: 4em;
+	color: white;
+}
+
+div {
+	position: relative;
+	/*background: blueviolet*/
+}
+
+#name-fill-placeholder {
+	z-index: -1;
+	position: relative;
+	left: 0;
+}
+
+div.name-fill {
+	position: fixed;
+	height: 18em;
+	/*min-width: 400px;*/
+	width: 100%;
+	margin-bottom: 0;
+	/*margin-bottom: 80px;*/
+	background: #004172;
+	/*background:#a545a6;*/
+}
+
+div.centered {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	white-space: nowrap;   /* FIX currently wouldn't be able to see name if on mobile */
+}
+
+div.card {
+	border-radius: 8px;
+	background: #3f3f3f;
+	height: 16em;
+	width: 14em;
+
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-ms-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-o-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-buffer { padding: 0.4em 0.4em 1.2em 0; }
+.text-buffer { padding-top: 0.4em; }
+.bottom-buffer { padding-bottom: 0.8em; }
+
+div.pic-wrapper {
+	height: 11em;
+	width: 11em;
+	overflow: hidden;
+	align-content: center;
+}
+
+div.pic-wrapper > img {
+	border-radius: 6px;
+}
+
+/*****************    adapted from https://codepen.io/anon/pen/QYOqQN   ****************/
+.blinking {
+	font-size: 4em;
+	display: initial;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+  }
+  @-moz-keyframes blink {
+		from, to { color: transparent; }
+		50% { color: lightgrey;}
+	}
+	@-webkit-keyframes blink {
+		from, to { color: transparent; }
+		50% { color: lightgrey;}
+  }
+  @-ms-keyframes blink {
+		from, to { color: transparent; }
+		50% { color: lightgrey;}
+  }
+  @-o-keyframes blink {
+		from, to { color: transparent; }
+		50% { color: lightgrey;}
+  }
+  @keyframes blink {
+		from, to { color: transparent; }
+		50% { color: lightgrey;}
+  }

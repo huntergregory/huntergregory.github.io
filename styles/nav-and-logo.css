@@ -1,0 +1,215 @@
+nav {
+	height: 5em; /* shrinks to 3 em */
+	width: 100%;
+    background: #004172;
+	z-index: 10;
+	position: fixed;
+	padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* -webkit-box-shadow : 0 3px 3px -2px #000000; 
+    -moz-box-shadow : 0 3px 3px -2px #000000;
+    -ms-box-shadow : 0 3px 3px -2px #000000;
+    -o-box-shadow : 0 3px 3px -2px #000000;
+    box-shadow : 0 3px 3px -2px #000000; */
+}
+
+/************* BUTTONS ***************/
+div.inline-grid {
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr;
+    grid-gap: 0.4em;
+    width: 80%;
+    opacity: 0;
+}
+
+a.nav-button {
+    z-index: 11;
+    display: inline-block;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+
+    width: 5em;
+}
+
+a.nav-button > h3 {
+    color: white;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+a.img-button {
+    z-index: 11;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    height: 2em;
+    width: 2em; 
+    opacity: 0.8;
+}
+
+a.nav-button::before {
+  content: '';
+  display: block;
+  height: 0.2em;
+  background-color: #559ad2;
+
+  position: absolute;
+  top: 0.3em;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+div.button-wrapper::before {
+  content: '';
+  display: block;
+  height: 0.2em;
+  background-color: #559ad2;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+div.button-wrapper { display: inline-block; }
+
+div.button-wrapper:hover::before {
+  width: 5.2em;
+}
+
+a.nav-button:hover::before {
+  width: 5.2em;
+}
+
+a.img-button:hover {
+    opacity: 1;
+}
+
+a.img-button > img {
+    height: 100%;
+    width: auto;
+}
+
+#button1 { grid-column: 1 / span 1; grid-row: 1 / span 1; }
+#button2 { grid-column: 2 / span 1; grid-row: 1 / span 1;}
+#button3 { grid-column: 3 / span 1; grid-row: 1 / span 1;}
+#button4 { grid-column: 4 / span 1; grid-row: 1 / span 1;}
+#button5 { grid-column: 5 / span 1; grid-row: 1 / span 1;}
+#button6 { grid-column: 6 / span 1; grid-row: 1 / span 1;}
+
+
+/********** LOGO **************/
+#logo {
+	border-radius: 0px 4px 4px 4px;
+}
+
+#outer-logo-wrapper {
+    display: inline-block;
+
+	z-index: 11;
+	position: relative;
+	width: 5em;
+	height: 100%;
+
+	opacity: 0;
+}
+
+.fading {
+    -webkit-animation: fadein 1s linear 0.5s 1;
+    -ms-animation: fadein 1s linear 0.5s 1;
+    -moz-animation: fadein 1s linear 0.5s 1;
+    -o-animation: fadein 1s linear 0.5s 1;
+    animation: fadein 1s linear 0.5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;	
+    animation-fill-mode: forwards;	
+}
+@keyframes -webkit-fadein {
+	0% { opacity: 0; }
+	100%  { opacity: 1;}
+}
+@keyframes -moz-fadein {
+	0% { opacity: 0; }
+	100%  { opacity: 1;}
+}
+@keyframes -o-fadein {
+	0% { opacity: 1; }
+	100%  { opacity: 0;}
+}
+@keyframes -ms-fadein {
+	0% { opacity: 0; }
+	100%  { opacity: 1;}
+}
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+
+#inner-logo-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#inner-logo-wrapper.spinning {
+    -webkit-animation: spin .4s linear 0.5s 1;
+    -moz-animation: spin .4s linear 0.5s 1;
+    -ms-animation: spin .4s linear 0.5s 1;
+    -os-animation: spin .4s linear 0.5s 1;
+    animation: spin .4s linear 0.5s 1;
+}
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+	from {-ms-transform:rotate(0deg);}
+	to {-ms-transform:rotate(360deg);}
+}
+@-o-keyframes spin {
+	from {-o-transform:rotate(0deg);}
+	to {-o-transform:rotate(360deg);}
+}
+@keyframes spin {
+	from { transform: rotate(0deg);}
+	to { transform: rotate(360deg); }
+}
+
+#logo.scaling {
+	-webkit-animation: scale .4s linear 0.5s 1;
+	-moz-animation: scale .4s linear 0.5s 1;
+	-ms-animation: scale .4s linear 0.5s 1;
+	-o-animation: scale .4s linear 0.5s 1;
+    animation: scale .4s linear 0.5s 1;
+}
+@-moz-keyframes scale {
+	from { -moz-transform: scale(0); }
+	to { -moz-transform: scale(1); }
+}
+@-webkit-keyframes scale {
+	from { -webkit-transform: scale(0); }
+	to { -webkit-transform: scale(1); }
+}
+@-ms-keyframes scale {
+	from { -ms-transform: scale(0); }
+	to { -ms-transform: scale(1); }
+}
+@-o-keyframes scale {
+	from { -o-transform: scale(0); }
+	to { -o-transform: scale(1); }
+}
+@keyframes scale {
+	from { transform: scale(0); }
+	to { transform: scale(1); }
+}

@@ -1,0 +1,190 @@
+<!-- 
+	TO DO's 
+	- add 'About', 'Projects', and 'Git' to nav bar
+	- change font-size dynamically?
+	- logo .hide() until either done typing or scroll past/ scrolltop is past maxLogoHeight
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hunter Gregory</title>
+	<meta charset="utf-8"> 
+	<!-- For mobile. See https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap and jQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<!-- FONTS -->
+	<!-- Nunito -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
+
+	<!-- MY STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/nav-and-logo.css">
+	<!-- MY SCRIPTS -->
+	<script type="text/javascript" src="scripts/typewriter.js"></script>
+	<script type="text/javascript" src="scripts/doc-ready.js"></script>
+	<script type="text/javascript" src="scripts/scroll.js"></script>
+	<script type="text/javascript" src="scripts/reveal-nav.js"></script>
+	<script type="text/javascript" src="scripts/content-distance.js"></script>
+	<script type="text/javascript" src="scripts/scroll-up.js"></script>
+</head>
+<body>
+	<nav>
+		<div id="outer-logo-wrapper">
+			<div id="inner-logo-wrapper">
+				<a href=""><img src="images/logo-white.png" alt="Logo" id="logo"></a>
+			</div>
+		</div>
+		<div class="inline-grid">
+			<div class="button-wrapper">
+				<a href="#about" onclick="revealNav(); addNavShadow();" id="button1" class="nav-button">
+					<h3>About</h3>
+				</a>
+			</div>
+			<div class="button-wrapper">
+				<a href="#projects" onclick="revealNav(); addNavShadow();" id="button2" class="nav-button">
+					<h3>Projects</h3>
+				</a>
+			</div>
+			<div class="button-wrapper">
+				<a href="#upcoming" onclick="revealNav(); addNavShadow()" id="button3" class="nav-button">
+					<h3>Upcoming</h3>
+				</a>
+			</div>
+			<a href="https://www.github.com/huntergregory" target="_blank" id="button4" class="img-button">
+				<img src="images/github-white.png" alt="Github">
+			</a>
+			<a href="https://www.linkedin.com/in/hunter-gregory-6934a916b/" target="_blank" id="button5" class="img-button">
+				<img src="images/linkedin-white.png" alt="Github">
+			</a>
+			<a href="mailto:hunter.gregory@duke.edu" id="button6" class="img-button">
+				<img src="images/email-white.png" alt="Github">
+			</a>
+		</div>
+	</nav>
+	<div class="name-fill">
+		<div class="centered">
+			<span id="name"></span>
+			<span id="cursor" class="blinking">|</span>
+		</div>
+	</div>
+	<div id="name-fill-placeholder" class="name-fill"></div>
+
+	<div class="content">
+		<div>
+			<a name="about"></a>
+			<h1 class="text-center">About Me</h1>
+			<div class="container-fluid">
+				<div class="col-xs-12 col-md-8 bottom-buffer"> <!-- shrink font-size at less than ~800 -->
+					<p>
+						I'm a Software Engineer studying at Duke University, with a passion for technology, design, and solving problems.
+						I'm from outside Boston, and a big Celtics and Patriots fan. I've played the piano since I was in second grade, 
+						and ever since I can remember, I've enjoyed exploring the outdoors, whether I'm hiking in North Carolina, camping 
+						in New England, or backpacking with my buddies.
+					</p>
+				</div>
+				<div class="col-xs-12 col-md-4 bottom-buffer">
+					<div class="pic-wrapper center-block">
+						<img src="images/hiking.jpg" alt="Backpacking">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12">
+					<p>
+						Here are some snapshots of my recent projects, tackling challenges ranging
+						from simulating several models of the world to creating a recording and notes
+						app targeted for musicians. These are just glimpses of the work I've done, so 
+						feel free to check out my GitHub for a more detailed description of these and more.
+					</p>
+				</div>
+			</div>
+		</div>
+			
+		<a name="projects"></a>
+		<div class="text-center">
+			<h1>Projects</h1>
+		</div>
+			
+		<div class="container">
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
+				<div class="card center-block">
+					<div class="text-center text-buffer">
+						<p class="title">General Automata</p>
+					</div>
+					<div class="pic-wrapper center-block">
+						<img src="images/hexagons-CA.png" alt="General Automata Project" class="center-block">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
+				<div class="card center-block">
+					<div class="text-center text-buffer">
+						<p class="title">Block Breacker</p>
+					</div>
+					<div class="pic-wrapper center-block">
+						<img src="images/BlockBreaker.png" alt="Block Breacker Project" class="center-block">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
+				<div class="card center-block">
+					<div class="text-center text-buffer">
+						<p class="title">Smart Bills</p> 
+					</div>
+					<div class="pic-wrapper center-block">
+						<img src="images/Smart-Bills-Assortment-wood-extension.png" alt="Smart Bills Project class="center-block">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
+				<div class="card center-block">
+					<div class="text-center text-buffer">
+						<p class="title">Melody Seeds</p>
+					</div>
+					<div class="pic-wrapper center-block">
+						<img src="images/Storyboards.png" alt="Melody Seeds Project" class="center-block">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10 card-buffer">
+				<div class="card center-block">	
+					<div class="text-center text-buffer">
+						<p class="title">This Website!</p>
+					</div>
+					<div class="pic-wrapper center-block">
+						<img src="images/logo-white.png" alt="Website Project" class="center-block">
+					</div>
+				</div>
+			</div>
+		</div>
+		<a name="upcoming"></a>
+		<div class="upcoming">
+			<h1>Upcoming</h1>
+			<h2>February</h2>
+			<ul>
+				<li>
+					Currently creating a back and front end API for a GUI and 
+					Logo parser in order to simulate a customizable turtle. Working in a team of 4 from my Advanced 
+					Software Engineering class.
+				</li>
+				<li>Competing in Google's Hash Code challenge with a group of friends.</li>
+			</ul>
+			<h2>March - May</h2>
+			<ul>
+				<li>Creating a game engine with a team of 10-12 people in the same class.</li>
+			</ul>
+		</div>
+		
+		<!-- FIX!!!!!!! include email hyperlink thing -->
+		<!-- <div class="bottom-links">
+			<p class="hind">
+				<a href="https://www.google.com" target="_blank">Contact</a> | 
+				<a href="https://www.github.com/huntergregory" target="_blank">GitHub</a> |
+				<a href="https://www.linkedin.com/in/hunter-gregory-6934a916b/" target="_blank">LinkedIn</a>
+			</p>
+		</div>  -->
+	</div>
+</body>
+</html>
