@@ -4,6 +4,8 @@ $(document).ready(function() {
 	handleResize();
 
 	$(window).resize(function() { handleResize();});
+	
+	$(".mini-video").each(function() { this.play();});
 
 	function handleResize() {
 		var windowSize = $(window).width();

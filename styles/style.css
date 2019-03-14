@@ -179,6 +179,12 @@ div.pic-wrapper > img {
 	border-radius: 6px;
 }
 
+.mini-video {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
 /*****************    adapted from https://codepen.io/anon/pen/QYOqQN   ****************/
 .blinking {
 	font-size: 4em;

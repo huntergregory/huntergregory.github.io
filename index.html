@@ -1,9 +1,3 @@
-<!-- 
-	TO DO's 
-	- add 'About', 'Projects', and 'Git' to nav bar
-	- change font-size dynamically?
-	- logo .hide() until either done typing or scroll past/ scrolltop is past maxLogoHeight
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,10 +105,24 @@
 			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
 				<div class="card center-block">
 					<div class="text-center text-buffer">
+						<p class="title">Slogo Turtles</p>
+					</div>
+					<div class="pic-wrapper center-block">
+						<video class="mini-video" autoplay muted loop class="center-block"> <!-- fix hard coded height and width -->
+							<source src="videos/slogo-recording.mov">
+						</video>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
+				<div class="card center-block">
+					<div class="text-center text-buffer">
 						<p class="title">General Automata</p>
 					</div>
 					<div class="pic-wrapper center-block">
-						<img src="images/hexagons-CA.png" alt="General Automata Project" class="center-block">
+						<video class="mini-video" autoplay muted loop class="center-block"> <!-- fix hard coded height and width -->
+							<source src="videos/game-of-life-recording.mov">
+						</video>
 					</div>
 				</div>
 			</div>
@@ -148,7 +156,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10 card-buffer">
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
 				<div class="card center-block">	
 					<div class="text-center text-buffer">
 						<p class="title">This Website!</p>
@@ -162,29 +170,15 @@
 		<a name="upcoming"></a>
 		<div class="upcoming">
 			<h1>Upcoming</h1>
-			<h2>February</h2>
-			<ul>
-				<li>
-					Currently creating a back and front end API for a GUI and 
-					Logo parser in order to simulate a customizable turtle. Working in a team of 4 from my Advanced 
-					Software Engineering class.
-				</li>
-				<li>Competing in Google's Hash Code challenge with a group of friends.</li>
-			</ul>
 			<h2>March - May</h2>
 			<ul>
-				<li>Creating a game engine with a team of 10-12 people in the same class.</li>
+				<li>Creating a game engine with a team of 10-12 people in my Advanced Software Engineering class.</li>
+			</ul>
+			<h2>April</h2>
+			<ul>
+				<li>Participating in Duke DataFest.</li>
 			</ul>
 		</div>
-		
-		<!-- FIX!!!!!!! include email hyperlink thing -->
-		<!-- <div class="bottom-links">
-			<p class="hind">
-				<a href="https://www.google.com" target="_blank">Contact</a> | 
-				<a href="https://www.github.com/huntergregory" target="_blank">GitHub</a> |
-				<a href="https://www.linkedin.com/in/hunter-gregory-6934a916b/" target="_blank">LinkedIn</a>
-			</p>
-		</div>  -->
 	</div>
 </body>
 </html>

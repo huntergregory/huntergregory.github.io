@@ -57,7 +57,7 @@ a.nav-button::before {
   background-color: #559ad2;
 
   position: absolute;
-  top: 0.3em;
+  bottom: 0;
   width: 0%;
 
   transition: all ease-in-out 250ms;
@@ -70,7 +70,7 @@ div.button-wrapper::before {
   background-color: #559ad2;
 
   position: absolute;
-  bottom: 0;
+  top: 0.3em;
   width: 0%;
 
   transition: all ease-in-out 250ms;
