@@ -34,17 +34,17 @@
 		</div>
 		<div class="inline-grid">
 			<div class="button-wrapper">
-				<a href="#experiences" onclick="revealNav(); addNavShadow();" id="button1" class="nav-button">
+				<a href="#experiences-anchor" onclick="revealNav(); addNavShadow();" id="button1" class="nav-button">
 					<h3>Experiences</h3>
 				</a>
 			</div>
 			<div class="button-wrapper">
-				<a href="#snapshots" onclick="revealNav(); addNavShadow();" id="button2" class="nav-button">
+				<a href="#snapshots-anchor" onclick="revealNav(); addNavShadow();" id="button2" class="nav-button">
 					<h3>Snapshots</h3>
 				</a>
 			</div>
 			<div class="button-wrapper">
-				<a href="#upcoming" onclick="revealNav(); addNavShadow()" id="button3" class="nav-button">
+				<a href="#upcoming-anchor" onclick="revealNav(); addNavShadow()" id="button3" class="nav-button">
 					<h3>Upcoming</h3>
 				</a>
 			</div>
@@ -85,10 +85,10 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-12">
-					<a name="experiences"></a> <!-- Move up here to show the title -->
+					<a name="experiences-anchor"></a> <!-- moved this here to get heading in view -->
 					<p>
 						Here are some of my significant experiences in software design and development as well as academia. 
-						If you want to see some of my projects in action, you can find snapshots of them <a href="#snapshots">here</a>. Check them out on Github for more details!
+						If you want to see some of my projects in action, you can find snapshots of them <a href="#snapshots-anchor">here</a>. Check them out on Github for more details!
 					</p>
 				</div>
 			</div>
@@ -97,161 +97,19 @@
 		<!-- have it be part of scroll, then fix at height, then let it go as part of scroll -->
 		<!-- All about padding for moving the scroller -->
 
-		<div style="padding-left: 1em" id="experiences"> 				<!-- temporary styling -->
-														<!-- Incorporate pics in these!!!!! -->
+		<!-- Move up here to show the title -->
+		<div style="padding-left: 1em" id="experiences"> <!-- temporary styling -->
 			<h1 class="text-center">Significant Experiences</h1>
-			<div class="exp-bullet">
-				<h3>Perthera: Software Engineer Internship</h3>  <!-- FIXME make text bigger -->
-				<h4>Technologies: RESTful Web Services, AWS S3, Java, MySQL, Vaadin</h4>   <!-- FIXME make text bigger -->
-				<h5>May 2019 - August 2019</h5>   <!-- FIXME make text bigger -->
-				<ul>
-					<li>Worked with and created RESTful APIs, ORM's, MySQL tables, and frontend components across several projects.</li>
-					<li>Expedited patient cancer treatment process and eased burden on patient coordinators by creating an automated system for faxing order forms to consenting patients' doctors (pre-filled forms with patient data). Up to 60 order forms sent weekly. </li>
-					<li>Created a means to easily record and view all company interactions with doctors (full stack).</li>
-					<li>Reduced the code base by ~2000 lines of code and eliminated several bugs by refactoring/constructing a table filtering system across multiple portals.</li>
-				</ul>
-			</div>
-			<div class="exp-bullet">
-				<h3>Duke Music Tutors: Dynamic Website & Reimbursement System</h3>
-				<h4>Technologies: CakePHP, MySQL, HTML, CSS, JavaScript, AdobeXD</h4>
-				<h5>July 2019 - Present</h5>
-				<ul>
-					<li>Created a website with a secure financial system and social forum (blogs, images, events, etc.) for my club. </li>
-					<li>Implemented an MVC design with user authentication and standard security measures.</li>
-					<li>Designed a database with ~20 normalized tables.</li>
-					<!-- <li>Streamlined all facets of the previously time-consuming reimbursement process into an efficient UI.</li> -->
-				</ul>
-			</div>
-			<div class="exp-bullet">
-				<h3>Core CS 230 Teaching Assistant</h3>
-				<h5>August 2019 - </h5>
-				<ul>
-					<li>Plan weekly discussion sections, hold office hours, grade assignments</li>
-					<li>Topics including functional programming, recursion, map-reduce, uncomputability, (un)countable infinities, and others</li>
-				</ul>
-			</div>
-			<div class="exp-bullet">
-				<h3>CS 308: Advanced Software Engineering</h3>
-				<h4>Technologies: XML, Java</h4>
-				<h5>January 2019 - May 2019</h5>
-				<ul>
-					<li>asdfasdf</li>
-				</ul>
-			</div>
-			<div class="exp-bullet">
-				<h3>SmartBills & MelodySeeds iOS apps</h3>
-				<h4>Technologies: Swift</h4>
-				<a name="snapshots"></a> <!-- Move up here to show the title -->
-				<h5>August 2018 - December 2018</h5>
-				<ul>
-					<li>asdfasdf</li>
-				</ul>
-			</div>
 		</div>
-			
+		
+		<a name="snapshots-anchor"></a>
 		<div class="text-center">
 			<h1>Snapshots</h1>
 		</div>
-		<div class="container" id="snapshots">
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Perthera Software Engineer Internship</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/perthera.png" alt="Perthera Logo" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Duke Music Tutors Dynamic Website & Reimbursement System</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/dmt-logo.jpg" alt="DMT Logo" class="center-block smaller">
-					</div>
-				</div>
-			</div>
-			<!-- 
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Game Engine & HUD</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/vooga.png" alt="Game Engine & HUD Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			-->
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Slogo Turtles</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<video class="mini-video center-block" autoplay muted loop> <!-- fix hard coded height and width -->
-							<source src="videos/slogo-recording.mov">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">General Automata</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<video class="mini-video" autoplay muted loop class="center-block"> <!-- fix hard coded height and width -->
-							<source src="videos/game-of-life-recording.mov">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Block Breacker</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/BlockBreaker.png" alt="Block Breacker Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Smart Bills</p> 
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/Smart-Bills-Assortment-wood-extension.png" alt="Smart Bills Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Melody Seeds</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/Storyboards.png" alt="Melody Seeds Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="card-buffer col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6">    <!-- make md-10 with md-1 offset if alone -->
-				<div class="card center-block">	
-					<div class="text-center text-buffer">
-						<p class="title">This Website!</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/logo-white.png" alt="Website Project" class="center-block">
-					</div>
-				</div>
-			</div>
-		</div>
+		
+		<div class="container" id="snapshots"></div>
 
-		<a name="upcoming"></a>
+		<a name="upcoming-anchor"></a>
 		<div class="upcoming">
 			<h1>Upcoming</h1>
 			<h2>August</h2>
