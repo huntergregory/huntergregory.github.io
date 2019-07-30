@@ -118,10 +118,10 @@ $(document).ready(function() {
 			experience = experiences[k];
 			var newDiv = 
 			"<div class='exp-bullet'>" + 
-				"<h3>" + experience[TITLE] + "</h3>";
+				"<h4>" + experience[TITLE] + "</h4>";
 			if (TECHNOLOGIES in experience) {
 				newDiv += 
-				"<h4>Technologies: " + experience[TECHNOLOGIES] + "</h4>";
+				"<h5>Technologies: " + experience[TECHNOLOGIES] + "</h5>";
 			}
 
 			var bullets = "";
@@ -130,7 +130,7 @@ $(document).ready(function() {
 			}
 
 			newDiv += 
-				"<h5>" + experience[DATE] + "</h5>" +
+				"<h6>" + experience[DATE] + "</h6>" +
 				"<ul>" + 
 					bullets
 				"</ul>" +

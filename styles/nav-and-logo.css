@@ -41,6 +41,7 @@ a.nav-button > h3 {
     text-align: center;
     align-self: center;
     justify-self: center;
+    font-size: 1em;
 }
 
 a.img-button {
