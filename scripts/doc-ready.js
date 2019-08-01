@@ -49,17 +49,19 @@ $(document).ready(function() {
 	experience[TITLE] = "Core CS 230 Teaching Assistant";
 	experience[DATE] = "August 2019 - Present";
 	experience[BULLETS] = [
-		"Plan weekly discussion sections, hold office hours, grade assignments",
-		"Topics including functional programming, recursion, map-reduce, uncomputability, (un)countable infinities, and others"
+		"Plan weekly discussion sections, hold office hours, grade assignments.",
+		"Topics including functional programming, recursion, map-reduce, uncomputability, (un)countable infinities, and others."
 	];
 	allExperiences.push(experience);
 
 	experience = {};
 	experience[TITLE] = "CS 308: Advanced Software Engineering";
-	experience[TECHNOLOGIES] = "XML, Java";
+	experience[TECHNOLOGIES] = "Git, XML, Java";
 	experience[DATE] = "January 2019 - May 2019";
 	experience[BULLETS] = [
-		"asdf"
+		"Created four medium to large software systems in teams of 3-10 people.",
+		"Strengthened skills with object-oriented design, polymorphism, design patterns, good code practices (creating extendible, reusable, & readable code).",
+		"New criteria created throughout each project to mimic change in demands encountered in industry."
 	];
 	allExperiences.push(experience);
 
@@ -68,7 +70,8 @@ $(document).ready(function() {
 	experience[TECHNOLOGIES] = "Swift";
 	experience[DATE] = "August 2018 - December 2018";
 	experience[BULLETS] = [
-		"asdf"
+		"Created a utility app and today extension (widget).",
+		"Designed comprehensive wireframe for a music recording app."
 	];
 	allExperiences.push(experience);
 	
@@ -125,24 +128,29 @@ $(document).ready(function() {
 			}
 
 			var bullets = "";
-			for (j=0, bulletsLen=experience[BULLETS].length; j<bulletsLen; j++) {
+			const bulletsLen = experience[BULLETS].length;
+			const  snapshotsAnchor = '<a name="snapshots-anchor"></a>';
+			for (j=0; j<bulletsLen; j++) {
+				if (k == len - 1 && j == bulletsLen - 2) {
+					bullets += snapshotsAnchor;
+				}
 				bullets += "<li>" + experience[BULLETS][j] + "</li>";
 			}
-
+			if (k == len - 1 && bulletsLen < 2) {
+				newDiv += snapshotsAnchor;
+			}
 			newDiv += 
 				"<h6>" + experience[DATE] + "</h6>" +
 				"<ul>" + 
 					bullets
 				"</ul>" +
 			"</div>";
-			console.log("experience step: " + k);
 			experienceDiv.append(newDiv);
 		}
 	}
 
 	function addSnapshots(snapshots) {
 		var snapshotDiv = $('#snapshots');
-		console.log(snapshots.length);
 		for (k=0, len=snapshots.length; k<len; k++) {
 			var snapshot = snapshots[k];
 			var divClasses = "card-buffer col-xs-10 col-xs-offset-1 ";
@@ -188,7 +196,6 @@ $(document).ready(function() {
 				"</div>" +
 			"</div>";
 
-			console.log("snapshot step: " + k);
 			snapshotDiv.append(newDiv);
 		}
 	}
@@ -209,7 +216,6 @@ $(document).ready(function() {
 		}
 		else if (screenWidth > 850) {
 			fontSize = 25;
-			console.log("here");
 		}
 		else if (screenWidth > 650) {
 			fontSize = 20;
@@ -232,10 +238,10 @@ $(document).ready(function() {
 	function handleNav(screenWidth) {
 		var navButtons = $('div.inline-grid');
 		if (screenWidth > 620) {
-			navButtons.show(); console.log("showing");
+			navButtons.show();
 		}
 		else {
-			(navButtons).hide(); console.log("hiding");
+			(navButtons).hide();
 		}
 	}
 });
