@@ -31,7 +31,7 @@ $(document).ready(function() {
 	allSnapshots.push(experience);
 
 	experience = {};
-	experience[TITLE] = "Duke Music Tutors: Dynamic Website & Reimbursement System";
+	experience[TITLE] = "Dynamic Website & Reimbursement System";
 	experience[FILE] = "dmt-logo.jpg";
 	experience[ALT] = "DMT Logo";
 	experience[IMG_EXTRA_CLASS] = "smaller";
@@ -74,8 +74,13 @@ $(document).ready(function() {
 		"Designed comprehensive wireframe for a music recording app."
 	];
 	allExperiences.push(experience);
-	
+
 	var snapshot = {};
+	snapshot[TITLE] = "Game Engine & Heads Up Display";
+	snapshot[FILE] = "vooga.gif";
+	allSnapshots.push(snapshot);
+	
+	snapshot = {};
 	snapshot[TITLE] = "Slogo Turtles";
 	snapshot[FILE] = "slogo-recording.mov"
 	allSnapshots.push(snapshot);
