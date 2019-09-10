@@ -26,6 +26,7 @@ $(document).scroll(function(){
 
     function updateNav() {
         var distance = getContentDistFromTop();
+        console.log(distance + " and " + minNavHeight);
         if (distance > maxNavHeight) {
             updateWhenSeparated();
             animateToHeight(maxNavHeight);
@@ -33,12 +34,13 @@ $(document).scroll(function(){
         else {
             if (distance > minNavHeight) {
                 revealNav(); //global
-                addNavShadow(); //also global
+                console.log("here");
                 animateToHeight(distance);
             }
             else {
                 animateToHeight(minNavHeight);
             }
+            addNavShadow(); //also global
         }
     };
 
