@@ -34,24 +34,24 @@
 		</div>
 		<div class="inline-grid">
 			<div class="button-wrapper">
-				<a href="#about" onclick="revealNav(); addNavShadow();" id="button1" class="nav-button">
-					<h3>About</h3>
+				<a href="#about-me-anchor" onclick="revealNav();" id="button1" class="nav-button">
+					<h3>About Me</h3>
 				</a>
 			</div>
 			<div class="button-wrapper">
-				<a href="#projects" onclick="revealNav(); addNavShadow();" id="button2" class="nav-button">
-					<h3>Projects</h3>
+				<a href="#snapshots-anchor" onclick="revealNav(); addNavShadow();" id="button2" class="nav-button">
+					<h3>Snapshots</h3>
 				</a>
 			</div>
 			<div class="button-wrapper">
-				<a href="#upcoming" onclick="revealNav(); addNavShadow()" id="button3" class="nav-button">
+				<a href="#upcoming-anchor" onclick="revealNav(); addNavShadow()" id="button3" class="nav-button">
 					<h3>Upcoming</h3>
 				</a>
 			</div>
 			<a href="https://www.github.com/huntergregory" target="_blank" id="button4" class="img-button">
 				<img src="images/github-white.png" alt="Github">
 			</a>
-			<a href="https://www.linkedin.com/in/hunter-gregory-6934a916b/" target="_blank" id="button5" class="img-button">
+			<a href="https://www.linkedin.com/in/hunter-gregory/" target="_blank" id="button5" class="img-button">
 				<img src="images/linkedin-white.png" alt="Github">
 			</a>
 			<a href="mailto:hunter.gregory@duke.edu" id="button6" class="img-button">
@@ -68,115 +68,45 @@
 	<div id="name-fill-placeholder" class="name-fill"></div>
 
 	<div class="content">
+		<a name='about-me-anchor'></a>
 		<div>
-			<a name="about"></a>
 			<h1 class="text-center">About Me</h1>
 			<div class="container-fluid">
 				<div class="col-xs-12 col-md-8 bottom-buffer"> <!-- shrink font-size at less than ~800 -->
 					<p>
-						I'm a Software Engineer studying at Duke University, with a passion for technology, design, and solving problems.
-						I'm from outside Boston, and a big Celtics and Patriots fan. I've played the piano since I was in second grade, 
-						and ever since I can remember, I've enjoyed exploring the outdoors, whether I'm hiking in North Carolina, camping 
-						in New England, or backpacking with my buddies.
+						I'm a Dual Major in CS and Stats at Duke University, with a keen curiosity and a passion for solving problems that improve people's quality of life. I have substantial Full-Stack Development and Design experience from my professional, personal, and academic endeavors.
+					</p>
+					<p>
+						Besides technical stuff, I'm a huge Boston sports fan, and some of my hobbies include playing classical/jazz piano, shooting hoops, and spending time outdoors.
 					</p>
 				</div>
 				<div class="col-xs-12 col-md-4 bottom-buffer">
 					<div class="pic-wrapper center-block">
-						<img src="images/hiking.jpg" alt="Backpacking">
+						<img src="images/hiking.jpg" alt="Backpacking"> <!-- FIXME diff pic -->
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-12">
 					<p>
-						Here are some snapshots of my recent projects, tackling challenges ranging
-						from simulating several models of the world to creating a recording and notes
-						app targeted for musicians. These are just glimpses of the work I've done, so 
-						feel free to check out my GitHub for a more detailed description of these and more.
+						Here are some snapshots of my projects of my projects.
+						Check them out on <a href="https://www.github.com/huntergregory" target="_blank">Github</a> for more details!
 					</p>
 				</div>
 			</div>
 		</div>
-			
-		<a name="projects"></a>
-		<div class="text-center">
-			<h1>Projects</h1>
+		
+		<a name="snapshots-anchor"></a>
+		<div class="text-center snapshots-title">
+			<h1>Snapshots 📸</h1>
 		</div>
-			
-		<div class="container">
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Slogo Turtles</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<video class="mini-video" autoplay muted loop class="center-block"> <!-- fix hard coded height and width -->
-							<source src="videos/slogo-recording.mov">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">General Automata</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<video class="mini-video" autoplay muted loop class="center-block"> <!-- fix hard coded height and width -->
-							<source src="videos/game-of-life-recording.mov">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Block Breacker</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/BlockBreaker.png" alt="Block Breacker Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Smart Bills</p> 
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/Smart-Bills-Assortment-wood-extension.png" alt="Smart Bills Project class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">
-					<div class="text-center text-buffer">
-						<p class="title">Melody Seeds</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/Storyboards.png" alt="Melody Seeds Project" class="center-block">
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 card-buffer">
-				<div class="card center-block">	
-					<div class="text-center text-buffer">
-						<p class="title">This Website!</p>
-					</div>
-					<div class="pic-wrapper center-block">
-						<img src="images/logo-white.png" alt="Website Project" class="center-block">
-					</div>
-				</div>
-			</div>
-		</div>
-		<a name="upcoming"></a>
+		
+		<div class="container" id="snapshots"></div>
+
+		<a name="upcoming-anchor"></a>
 		<div class="upcoming">
-			<h1>Upcoming</h1>
-			<h2>March - May</h2>
+			<h1>Upcoming ⌚️</h1>
+			<h2>October</h2>
 			<ul>
-				<li>Creating a game engine with a team of 10-12 people in my Advanced Software Engineering class.</li>
-			</ul>
-			<h2>April</h2>
-			<ul>
-				<li>Participating in Duke DataFest.</li>
+				<li>Kaggle Data Competition for Graduate Machine Learning course.</li>
 			</ul>
 		</div>
 	</div>

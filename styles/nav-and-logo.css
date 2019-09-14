@@ -21,6 +21,9 @@ div.inline-grid {
     grid-gap: 0.4em;
     width: 80%;
     opacity: 0;
+
+    padding-left: 30px;
+    padding-top: 5px;
 }
 
 a.nav-button {
@@ -38,6 +41,7 @@ a.nav-button > h3 {
     text-align: center;
     align-self: center;
     justify-self: center;
+    font-size: 1em;
 }
 
 a.img-button {
