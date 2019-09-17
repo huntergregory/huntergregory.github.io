@@ -32,9 +32,9 @@ $(document).ready(function() {
 
 	experience = {};
 	experience[TITLE] = "Dynamic Website & Reimbursement System";
-	experience[FILE] = "dmt-logo.jpg";
-	experience[ALT] = "DMT Logo";
-	experience[IMG_EXTRA_CLASS] = "smaller";
+	experience[FILE] = "dukemusictutors.mov";
+	//experience[ALT] = "DMT Logo";
+	//experience[IMG_EXTRA_CLASS] = "smaller";
 	experience[TECHNOLOGIES] = "CakePHP, MySQL, HTML, CSS, JavaScript, AdobeXD";
 	experience[DATE] = "July 2019 - Present";
 	experience[BULLETS] = [
