@@ -65,6 +65,10 @@ h6 {
 	color: #eeeeee;
 }
 
+/* .title.less-padding {
+	margin-bottom: 0;
+} */
+
 ul {
 	list-style: none;
 	padding-left: 0em;
@@ -201,9 +205,25 @@ div.pic-wrapper {
 	overflow: hidden;
 	align-content: center;
 }
+/* 
+div.pic-wrapper:not(.pro-pic) {
+	overflow: hidden;
+} */
+
+div.pic-wrapper.pro-pic {
+	height: 12.9em;
+	width: 12.9em;
+}
+
+div.pic-wrapper.pro-pic > img.pro-pic {
+	border-radius: 8px;
+}
 
 div.pic-wrapper > img {
 	border-radius: 6px;
+}
+
+div.pic-wrapper > img:not(.pro-pic) {
 	width:90%;
 	height:90%;
 }

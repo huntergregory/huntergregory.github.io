@@ -37,12 +37,12 @@ $(window).on('load', function() {
             console.log(oldText);
             i++;
             $('#name').text(newContent);
-			if (i==4 || i == 15) { //at "Hey!"
+			if (i==4) //at "Hey!"
 				setTimeout(typeWriter, pause);
-			}
-			else {
+			// else if (i == 15) //before period
+			// 	setTimeout(typeWriter, pause);
+			else
 				setTimeout(typeWriter, speed);
-			}
 		}
 		console.log("typin!");
 		if (i == txt.length) {
