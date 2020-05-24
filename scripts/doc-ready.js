@@ -140,6 +140,7 @@ $(document).ready(function() {
 
 
 	$(".mini-video").each(function() { this.play();});
+	writeName()
 
 	function addExperiences(experiences) {
 		var experienceDiv = $('#experiences');

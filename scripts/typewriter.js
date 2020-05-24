@@ -1,4 +1,5 @@
-$(window).on('load', function() {
+// $(window).on('load', function() {
+function writeName() {
     var i = 0;
 	var txt = "Hey! I'm Hunter.";
 	var speed = 120;
@@ -49,5 +50,6 @@ $(window).on('load', function() {
 			revealNav();
 		}
 	}
-});
+}
+// });
     
