@@ -16,6 +16,27 @@ $(document).ready(function() {
 	const IMG_EXTRA_CLASS = "extra class";
 
 	var experience = {};
+	experience[TITLE] = "Microsoft Software Engineer Internship";
+	experience[FILE] = "microsoft/logo.png" //"microsoft/smallest_grey3.png" // "microsoft/smaller_grey.png";
+	experience[ALT] = "Microsoft Logo";
+	experience[TECHNOLOGIES] = "Kubernetes, GoLang, C#";
+	experience[DATE] = "May 2020 - August 2020";
+	experience[BULLETS] = [
+		"Azure Container Networking Team" //, "", ...
+	];
+	allExperiences.push(experience);
+	allSnapshots.push(experience);
+
+	//TODO INCLUDE
+	// Twitter Digest
+	// Twitter Sarcasm Detection
+	// Democratic Debates Transcripts
+	// Datathon Thing
+	// Unemployment Thing
+	// Vergil Vocab?
+	// anything else from the fall?
+
+	var experience = {};
 	experience[TITLE] = "Perthera Software Engineer Internship";
 	experience[FILE] = "perthera.png";
 	experience[ALT] = "Perthera Logo";
