@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 	var experience = {};
 	experience[TITLE] = "Microsoft Software Engineer Internship";
-	experience[FILE] = "microsoft/logo.png" //"microsoft/smallest_grey3.png" // "microsoft/smaller_grey.png";
+	experience[FILE] = "microsoft-logo.png"
 	experience[ALT] = "Microsoft Logo";
 	experience[TECHNOLOGIES] = "Kubernetes, GoLang, C#";
 	experience[DATE] = "May 2020 - August 2020";
@@ -29,7 +29,6 @@ $(document).ready(function() {
 
 	//TODO INCLUDE
 	// Twitter Digest
-	// Twitter Sarcasm Detection
 	// Democratic Debates Transcripts
 	// Datathon Thing
 	// Unemployment Thing
@@ -37,8 +36,21 @@ $(document).ready(function() {
 	// anything else from the fall?
 
 	var experience = {};
+	experience[TITLE] = "Sarcasm Detection in Twitter (ACL Paper)";
+	experience[FILE] = "twitter-logo.png";
+	experience[ALT] = "Twitter Logo";
+	experience[TECHNOLOGIES] = "Text Classification, Transformers";
+	experience[DATE] = "January 2020 - May 2020";
+	experience[BULLETS] = [
+		"Proved that conversation context improves sarcasm detection",
+		"Transformer models performed best",
+	];
+	allExperiences.push(experience);
+	allSnapshots.push(experience);
+
+	var experience = {};
 	experience[TITLE] = "Perthera Software Engineer Internship";
-	experience[FILE] = "perthera.png";
+	experience[FILE] = "perthera.png"; //15 KB
 	experience[ALT] = "Perthera Logo";
 	experience[TECHNOLOGIES] = "RESTful Web Services, AWS S3, Java, MySQL, Vaadin";
 	experience[DATE] = "May 2019 - August 2019";
@@ -53,7 +65,7 @@ $(document).ready(function() {
 
 	experience = {};
 	experience[TITLE] = "Dynamic Website & Reimbursement System";
-	experience[FILE] = "dukemusictutors.mov";
+	experience[FILE] = "dukemusictutors.mov"; //3 MB!
 	//experience[ALT] = "DMT Logo";
 	//experience[IMG_EXTRA_CLASS] = "smaller";
 	experience[TECHNOLOGIES] = "CakePHP, MySQL, HTML, CSS, JavaScript, AdobeXD";
@@ -98,40 +110,40 @@ $(document).ready(function() {
 
 	var snapshot = {};
 	snapshot[TITLE] = "Game Engine & Heads Up Display";
-	snapshot[FILE] = "vooga.gif";
+	snapshot[FILE] = "vooga.gif"; // 48 KB
 	allSnapshots.push(snapshot);
 	
 	snapshot = {};
 	snapshot[TITLE] = "Slogo Turtles";
-	snapshot[FILE] = "slogo-recording.mov"
+	snapshot[FILE] = "slogo-recording.mov" //1.8 MB!
 	allSnapshots.push(snapshot);
 
 	snapshot = {};
 	snapshot[TITLE] = "General Automata";
-	snapshot[FILE] = "game-of-life-recording.mov"
+	snapshot[FILE] = "game-of-life-recording.mov" //2.7 MB!
 	allSnapshots.push(snapshot);
 
 	snapshot = {};
 	snapshot[TITLE] = "Block Breacker";
-	snapshot[FILE] = "BlockBreaker.png"
+	snapshot[FILE] = "BlockBreaker.png" // 378 KB
 	snapshot[ALT] = "Block Breaker Project";
 	allSnapshots.push(snapshot);
 
 	snapshot = {};
-	snapshot[TITLE] = "Smart Bills";
+	snapshot[TITLE] = "Smart Bills"; // 1.4 MB!
 	snapshot[FILE] = "Smart-Bills-Assortment-wood-extension.png"
 	snapshot[ALT] = "Smart Bills Project";
 	allSnapshots.push(snapshot);
 
 	snapshot = {};
 	snapshot[TITLE] = "Melody Seeds";
-	snapshot[FILE] = "Storyboards.png"
+	snapshot[FILE] = "Storyboards.png" // 923 KB!
 	snapshot[ALT] = "Melody Seeds Project";
 	allSnapshots.push(snapshot);
 
 	snapshot = {};
 	snapshot[TITLE] = "This Website!";
-	snapshot[FILE] = "logo-white.png"
+	snapshot[FILE] = "logo-white.png" //10 KB
 	snapshot[ALT] = "Website Project";
 	allSnapshots.push(snapshot);
 
