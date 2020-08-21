@@ -163,7 +163,7 @@ div {
 
 div.name-fill {
 	position: fixed;
-	height: 18em;
+	height: 15em;
 	/*min-width: 400px;*/
 	width: 100%;
 	margin-bottom: 0;
@@ -211,7 +211,7 @@ div.pic-wrapper:not(.pro-pic) {
 } */
 
 div.pic-wrapper.pro-pic {
-	height: 12.9em;
+	height: 11em;
 	width: 12.9em;
 }
 
