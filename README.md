@@ -5,4 +5,4 @@ My personal website including:
 - my upcoming projects
 - and information about me!
 
-View the site [here](https://hlgregory.com)!
+View the site [here](huntergregory.tech)!
