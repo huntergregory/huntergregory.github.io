@@ -1,1 +1,1 @@
-# [My Portfolio](https://huntergregory.tech)
+# My Portfolio: [huntergregory.tech](https://huntergregory.tech)
